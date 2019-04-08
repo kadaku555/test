@@ -1,0 +1,18 @@
+<html ng-app="myTest">
+<head>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div ng-controller="testCtrl">
+    <label>URL: </label>
+    <input ng-model="urlTmp">
+    <button ng-click="open()">Open</button>
+    <iframe ng-src="url"></iframe>
+    <button ng-click="toto(0, 6, 0)">Windows</button>
+    <label>{{url}}</label>
+</div>
+
+</body>
+</html>
